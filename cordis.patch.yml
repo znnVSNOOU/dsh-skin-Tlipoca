@@ -1,0 +1,8 @@
+# dsh-gal-skin bundle patch：向 web 组合挂载 dsh-gal-skin。
+# Node half 极简；主体是 client half —— 经 package.json 的 dsh.client 声明由 client
+# 内核组合进页面，注册 conversation.view 槽位的 'gal' 视图（order 5，落在「对话」
+# 与「轨迹」之间）。全部素材（背景/对话框/立绘差分）内嵌于 client bundle，
+# 不依赖运行时文件访问。
+- insert:
+    - id: dsh-gal-skin
+      name: dsh-gal-skin

@@ -1,0 +1,35 @@
+{
+  "name": "dsh-skin-Tlipoca",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "《犹格索托斯的庭院》特莉波卡 (Tlipoca) GAL 视觉小说沉浸式皮肤插件 for DeepSeek Harness",
+  "main": "./.dsh-plugin/index.mjs",
+  "exports": {
+    ".": "./.dsh-plugin/index.mjs",
+    "./client": "./.dsh-plugin/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "tlipoca",
+    "galgame",
+    "visual-novel",
+    "theme"
+  ],
+  "author": "Noou",
+  "license": "MIT"
+}
